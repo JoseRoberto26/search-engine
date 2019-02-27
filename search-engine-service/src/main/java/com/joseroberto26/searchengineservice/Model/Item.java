@@ -7,10 +7,11 @@ import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
 @Document(indexName = "search-engine", type = "item", shards =2)
+@Entity
 public class Item {
 
     @Id
-    private Long id;
+    private String id;
 
     @NotBlank
     private String title;

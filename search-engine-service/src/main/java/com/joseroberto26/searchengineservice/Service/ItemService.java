@@ -16,8 +16,8 @@ public class ItemService {
     @Autowired
     ItemRepository itemRepository;
 
-    public void saveItem(List<Item> item) throws EmptyNameException{
-        itemRepository.saveAll(item);
+    public void saveItem(List<Item> items) throws EmptyNameException{
+        itemRepository.saveAll(items);
     }
 
     public List<Item> searchItems(String itemName, Optional<String> itemType){

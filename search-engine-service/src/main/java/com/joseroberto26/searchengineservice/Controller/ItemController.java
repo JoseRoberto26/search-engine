@@ -22,8 +22,8 @@ public class ItemController {
 
 
     @PostMapping
-    public ResponseEntity saveItem( @Valid @RequestBody List<Item> item){
-        itemService.saveItem(item);
+    public ResponseEntity saveItem( @Valid @RequestBody List<Item> items){
+        itemService.saveItem(items);
         ResponseEntity responseEntity = ResponseEntity.status(HttpStatus.OK).build();
         return responseEntity;
     }

@@ -10,7 +10,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface ItemRepository extends ElasticsearchRepository<Item ,Long> {
+public interface ItemRepository extends ElasticsearchRepository<Item ,String> {
 
     List<Item> findAllByTitleContaining(String itemName);
 

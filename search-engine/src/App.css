@@ -81,7 +81,8 @@ li{
 }
 ul{
   background-color:rgb(255, 244, 199);
-
+  display: flex;
+  flex-direction: column;
 }
 
 .App {
